@@ -1,6 +1,6 @@
 {
   "name": "lodash-flatten-object",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Simply flatten object extension for Lodash",
   "main": "index.js",
   "scripts": {
