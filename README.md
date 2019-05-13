@@ -1,14 +1,13 @@
 # flatten-object
 
-<!-- [![Build Status](https://travis-ci.com/edwincen/unwind.svg?branch=master)](https://travis-ci.com/edwincen/unwind) [![Greenkeeper badge](https://badges.greenkeeper.io/edwincen/unwind.svg)](https://greenkeeper.io/) -->
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-Simply flatten object extension for Lodash
+Flatten object to simple key/value object with customized separator
 
 # Install
 
 ```javascript
-npm install --save lodash-flatten-object
+npm install --save obj-flat
 ```
 # Usage
 
@@ -88,18 +87,4 @@ const output = flattenObject(data, { sorted: true })
 //   'c.1': 12
 //   'c.2': 13
 // }
-```
-
-## Use flattenObject as module of lodash
-```javascript
-const _ = require('lodash')
-require('lodash-flatten-object')({ injected: true })
-const data = {
-  z: 1,
-  x: 2,
-  a: 3,
-  b: 4
-}
-// Use flattenObject as function of lodash
-const output = _.flattenObject(data)
 ```
