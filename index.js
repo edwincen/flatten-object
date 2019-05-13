@@ -2,14 +2,14 @@
  * @Author: edwin
  * @Date:   2019-05-13 11:40:08
  * @Last Modified by: edwin
- * @Last Modified At: 2019-05-13 13:58:37
+ * @Last Modified At: 2019-05-13 15:48:13
  */
 
 function getKeys (obj, separator, keys, parent) {
   if (obj) {
     Object.keys(obj).forEach(k => {
       const key = parent ? `${parent}${separator}${k}` : k
-      if (typeof obj[k] === 'object') {
+      if (typeof obj[k] === 'object' && !Buffer.isBuffer(obj[k])) {
         getKeys(obj[k], separator, keys, key)
       } else {
         keys.push(key)

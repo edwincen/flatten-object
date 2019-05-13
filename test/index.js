@@ -2,7 +2,7 @@
  * @Author: edwin
  * @Date:   2019-05-13 12:04:39
  * @Last Modified by: edwin
- * @Last Modified At: 2019-05-13 13:43:06
+ * @Last Modified At: 2019-05-13 15:49:05
  */
 const expect = require('chai').expect
 
@@ -37,6 +37,14 @@ const objectWithLvs = {
   },
   c: [ 11, 12, 13 ]
 }
+const objectWithBuffer = {
+  a: 1,
+  c: {
+    c2: 3,
+    c1: 2
+  },
+  b: Buffer.from('This is a test', 'utf8')
+}
 
 const executeTests = func => {
   it('should flatten the object without sort', () => {
@@ -63,6 +71,10 @@ const executeTests = func => {
   it('should flatten the multi-level object with sort', () => {
     const output = func(objectWithLvs, { sort: true })
     expect(Object.keys(output)).to.have.ordered.members(['a', 'b.b1.b11', 'b.b1.b12', 'b.b2', 'b.b3.0.b31', 'b.b3.0.b32', 'b.b3.1.b33', 'b.b3.1.b34', 'b.b3.1.b35.b351', 'b.b3.1.b35.b352', 'c.0', 'c.1', 'c.2'])
+  })
+  it('should flatten the object with stream/buffer value', () => {
+    const output = func(objectWithBuffer, { sort: true })
+    expect(output.b.toString()).to.be.equal(Buffer.from('This is a test', 'utf8').toString())
   })
 }
 
