@@ -1,6 +1,6 @@
 # flatten-object
 
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![Greenkeeper badge](https://badges.greenkeeper.io/edwincen/flatten-object.svg)](https://greenkeeper.io/)
 
 Flatten object to simple key/value object with customized separator
 
