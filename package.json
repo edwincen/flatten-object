@@ -4,7 +4,8 @@
   "description": "Simply flatten object extension for Lodash",
   "main": "index.js",
   "scripts": {
-    "test": "standard && mocha --exit -t 5000 test/index.js"
+    "test": "standard && mocha --exit -t 5000 test/index.js",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
