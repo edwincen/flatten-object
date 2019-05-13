@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.4](https://github.com/edwincen/flatten-object/compare/v1.2.3...v1.2.4) (2019-05-13)
+
+
+### Bug Fixes
+
+* **$main:** Add support for buffer type value in object ([22a35cf](https://github.com/edwincen/flatten-object/commit/22a35cf))
+
+
+
 ### [1.2.3](https://github.com/edwincen/flatten-object/compare/v1.2.2...v1.2.3) (2019-05-13)
 
 
