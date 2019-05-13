@@ -1,6 +1,6 @@
 {
   "name": "obj-flat",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Flatten object to simple key/value object with customized separator",
   "main": "index.js",
   "scripts": {

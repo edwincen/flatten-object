@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/edwincen/flatten-object/compare/v1.2.0...v1.2.1) (2019-05-13)
+
+
+### Build System
+
+* **$npm:** Change package name to obj-flat ([a3f2d90](https://github.com/edwincen/flatten-object/commit/a3f2d90))
+
+
+
 ## [1.2.0](https://github.com/edwincen/flatten-object/compare/v1.1.0...v1.2.0) (2019-05-13)
 
 
