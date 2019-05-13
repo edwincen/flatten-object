@@ -1,7 +1,7 @@
 {
-  "name": "lodash-flatten-object",
+  "name": "flat-object",
   "version": "1.1.0",
-  "description": "Simply flatten object extension for Lodash",
+  "description": "Flatten object to simple key/value object with customized separator",
   "main": "index.js",
   "scripts": {
     "test": "standard && mocha --exit -t 5000 test/index.js",
@@ -12,11 +12,12 @@
     "url": "git+https://github.com/edwincen/flatten-object.git"
   },
   "keywords": [
+    "flat",
+    "flatten",
+    "flat-object",
     "flatten-object",
     "flatten",
-    "flattenDeep",
-    "lodash",
-    "lodash-extension"
+    "flattenDeep"
   ],
   "author": "Edwin",
   "license": "MIT",
@@ -46,7 +47,5 @@
       "monky"
     ]
   },
-  "dependencies": {
-    "lodash": "^4.17.11"
-  }
+  "dependencies": {}
 }

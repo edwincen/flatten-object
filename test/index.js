@@ -2,7 +2,7 @@
  * @Author: edwin
  * @Date:   2019-05-13 12:04:39
  * @Last Modified by: edwin
- * @Last Modified At: 2019-05-13 12:28:08
+ * @Last Modified At: 2019-05-13 13:43:06
  */
 const expect = require('chai').expect
 
@@ -67,12 +67,6 @@ const executeTests = func => {
 }
 
 describe('Use flattenObject as module', () => {
-  const flattenObject = require('../index')()
+  const flattenObject = require('../index')
   executeTests(flattenObject)
-})
-
-describe('Use flattenObject as extension of lodash', () => {
-  const _ = require('lodash')
-  require('../index')({ injected: true })
-  executeTests(_.flattenObject)
 })
